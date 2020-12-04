@@ -1,7 +1,5 @@
 // variáveis
-document.getElementById('nav-toggle').onclick = function () {
-    document.getElementById("nav-content").classList.toggle("hidden");
-}
+
 const lista = document.querySelector("#lista");
 const adicionar = document.querySelector("#adicionar");
 const comentario = document.querySelector("#comentario");
@@ -160,68 +158,6 @@ apagarListaSalva.addEventListener("click", () => {
     }
 }); 
 
-
-/*
-salvarLista.addEventListener("click", () => {
-    if (lista.childElementCount === 0) {
-        salvoComentario.innerHTML = "Por favor, insira algum item e tente novamente.";
-        salvarLista.style.backgroundColor = "firebrick";
-        salvarLista.style.color = "#fff";
-        setTimeout(() => {
-            salvarLista.style.backgroundColor = "initial";
-            salvarLista.style.color = "initial";
-        }, 500);
-    } else {
-        localStorage.clear();
-        for (i = 0; i < lista.childElementCount; i++) {
-            localStorage.setItem(i, lista.childNodes[i].innerText);
-        }
-        salvoComentario.innerHTML = "Lista salva com sucesso!";
-        salvarLista.style.backgroundColor = "olivedrab";
-        salvarLista.style.color = "olivedrab";
-        setTimeout(() => {
-            salvarLista.style.backgroundColor = "initial";
-            salvarLista.style.color = "initial";
-        }, 500);
-    }
-});
-
-carregarLista.addEventListener("click", () => {
-    if (localStorage.length === 0) {
-        salvoComentario.innerHTML = "Não há itens salvos na lista.";
-        carregarLista.style.backgroundColor = "firebrick";
-        carregarLista.style.color = "#fff";
-        setTimeout(() => {
-            carregarLista.style.backgroundColor = "initial";
-            carregarLista.style.color = "initial";
-        }, 500);
-    } else {
-        lista.innerHTML = "";
-        for (i = 0; i < localStorage.length; i++) {
-            localItem = localStorage.getItem(i);
-            itemGenerico = document.createElement("option");
-            t = document.createTextNode(localItem);
-            itemGenerico.appendChild(t);
-            lista.appendChild(itemGenerico);
-        }
-        salvoComentario.innerHTML = "Lista carregada com sucesso!";
-        carregarLista.style.backgroundColor = "olivedrab";
-        carregarLista.style.color = "#fff";
-        setTimeout(() => {
-            carregarLista.style.backgroundColor = "initial";
-            carregarLista.style.color = "initial";
-        }, 500);
-    }
-});
-
-apagarLista.addEventListener("click", () => {
-    lista.innerHTML = "";
-    salvoComentario.innerHTML = "Lista atual apagada com sucesso!";
-    apagarLista.style.backgroundColor = "olivedrab";
-    apagarLista.style.color = "#fff";
-    setTimeout(() => {
-        apagarLista.style.backgroundColor = "initial";
-        apagarLista.style.color = "initial";
-    }, 500);
-});
-*/
+document.getElementById('nav-toggle').onclick = function () {
+    document.getElementById("nav-content").classList.toggle("hidden");
+}
