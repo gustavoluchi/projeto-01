@@ -13,6 +13,7 @@
     "babel-minify": "^0.5.1",
     "gulp": "^4.0.2",
     "gulp-babel-minify": "^0.5.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-html-minifier-terser": "^6.0.1"
   }
 }
