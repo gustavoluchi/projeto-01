@@ -23,11 +23,11 @@
             class="text-white no-underline hover:text-white hover:no-underline"
             href="#"
           >
-          <h1 class="text-3xl pl-2 inline">
+          <h1 class="sm:text-3xl pl-2 inline">
             <span
-              class="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-600"
+              class="sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-600"
               >DEV</span
-            >inHouse - Projeto #1 - Lista de Afazeres
+            >inHouse - Projeto #1
             </h1>
           </a>
         </div>
@@ -74,26 +74,26 @@
     </header>
 
     <main
-      class="bg-white max-w-lg m-auto p-8 md:p-12 my-32 rounded-lg shadow-2xl"
+      class="bg-white w-11/12 max-w-lg m-auto py-8 md:p-12 my-32 rounded-lg shadow-2xl"
     >
-      <h2 class="font-bold text-2xl text-center">Sua lista de Afazeres</h2>
+      <h2 class="font-bold text-xl sm:text-2xl text-center">Sua lista de Afazeres</h2>
       <div class="flex justify-center items-center">
-        <div class="m-4 flex relative h-24 group">
+        <div class="my-4 flex relative h-24 group">
           <label
-            class="pr-2 absolute left-5 top-1 z-10 text-center text-gray-500 bg-white px-2 bg-center"
+            class="pr-2 absolute left-6 top-o sm:top-1 z-10 text-center text-gray-500 bg-white px-2 bg-center"
             for="inserir"
             id="afazerAmarelo"
             >Afazer</label
           >
         </div>
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center flex-col sm:flex-row">
           <input
-            class="rounded-l-lg p-4 mr-0 border-t border-b border-l text-gray-800 border-gray-200 bg-white focus:placeholder-gray-300 focus:outline-none focus:border-yellow-300"
+            class="rounded-lg sm:rounded-r-none py-2 sm:py-4 px-8 m-4 sm:mr-0 border sm:border-0 sm:border-t sm:border-b sm: sm:border-l text-center sm:text-left text-gray-800 border-gray-200 bg-white focus:placeholder-gray-300 focus:outline-none focus:border-yellow-400"
             placeholder="digite seu afazer"
             id="inserir"
           />
           <button
-            class="px-8 rounded-r-lg text-gray-800 font-bold p-4 uppercase bg-yellow-300 hover:bg-yellow-500 transition duration-200 border-t border-b border-r focus:border-gray-500 focus:outline-none"
+            class="px-8 w-auto rounded-lg sm:rounded-l-none text-gray-800 font-bold p-1 sm:p-4 uppercase bg-yellow-300 hover:bg-yellow-500 transition duration-200 border-t border-b border-r focus:border-gray-500 focus:outline-none"
             id="adicionar"
             aria-label="adicionar item"
           >
@@ -102,13 +102,13 @@
         </div>
       </div>
       <div>
-        <div class="text-red-500 m-4 text-center h-5" id="comentario"></div>
+        <div class=" text-center h-11 sm:h-6" id="comentario"></div>
         <ul id="lista" class="grid-cols-1"></ul>
       </div>
       <div class="flex items-center justify-center">
         <button
           id="apagarListaSalva"
-          class="px-8 p-4 mt-8 rounded-lg text-black font-bold uppercase bg-yellow-300 hover:bg-yellow-500 transition duration-200 border focus:border-gray-500 focus:outline-none"
+          class="px-8 py-2 sm:py-4 mt-8 rounded-lg text-black font-bold uppercase bg-yellow-300 hover:bg-yellow-500 transition duration-200 border focus:border-gray-500 focus:outline-none"
           aria-label="deletar todos itens"
         >
           Apagar toda lista
@@ -116,7 +116,7 @@
       </div>
     </main>
     <footer
-      class="w-full mx-auto flex justify-center items-center text-white bg-gray-600 h-12 text-white"
+      class="w-full h-2/6 p-4 sm:mx-auto flex justify-center items-center text-white text-center bg-gray-600 h-12 text-white flex-col sm:flex-row"
     >
       <p>
         Criado por

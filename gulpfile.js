@@ -23,7 +23,7 @@ gulp.task('miniHtml', () => {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('deploy', () => src('./dist/**/*').pipe(ghPages()));
+// por configurar gulp.task('deploy', () => src('./dist/**/*').pipe(ghPages()));
 
 gulp.task('default', gulp.parallel(
   'miniJs',
