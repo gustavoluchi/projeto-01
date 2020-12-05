@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <meta name="Description" content="Projeto nº 1 do curso DEVinHouse
+    realizado pelo SENAI em parceria com a Softplan e a ACATE">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto 1 - To-Do List</title>
@@ -34,6 +36,7 @@
           <button
             id="nav-toggle"
             class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-200 hover:text-white hover:border-white"
+            aria-label="menu"
           >
             <svg
               class="fill-current h-3 w-3"
@@ -54,14 +57,14 @@
             <li class="mr-3">
               <a
                 class="inline-block py-2 px-4 text-white no-underline hover:underline hover:text-underline"
-                href=""
+                href="#"
                 >Início</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-gray-400 no-underline hover:text-gray-200 hover:underline py-2 px-4"
-                href=""
+                class="inline-block text-white no-underline hover:underline py-2 px-4"
+                href="#"
                 >Exemplo</a
               >
             </li>
@@ -78,20 +81,21 @@
         <div class="m-4 flex relative h-24 group">
           <label
             class="pr-2 absolute left-5 top-1 z-10 text-center text-gray-500 bg-white px-2 bg-center"
-            for="item"
+            for="inserir"
             id="afazerAmarelo"
             >Afazer</label
           >
         </div>
         <div class="flex justify-center items-center">
           <input
-            class="rounded-l-lg p-4 mr-0 border-t border-b border-l text-gray-800 border-gray-200 bg-white focus:placeholder-gray-300 focus:outline-none focus:border-yellow-400"
+            class="rounded-l-lg p-4 mr-0 border-t border-b border-l text-gray-800 border-gray-200 bg-white focus:placeholder-gray-300 focus:outline-none focus:border-yellow-300"
             placeholder="digite seu afazer"
             id="inserir"
           />
           <button
-            class="px-8 rounded-r-lg text-gray-50 font-bold p-4 uppercase bg-yellow-400 hover:bg-yellow-600 transition duration-200 border-t border-b border-r focus:border-gray-500 focus:outline-none"
+            class="px-8 rounded-r-lg text-gray-800 font-bold p-4 uppercase bg-yellow-300 hover:bg-yellow-500 transition duration-200 border-t border-b border-r focus:border-gray-500 focus:outline-none"
             id="adicionar"
+            aria-label="adicionar item"
           >
             Adicionar
           </button>
@@ -104,14 +108,15 @@
       <div class="flex items-center justify-center">
         <button
           id="apagarListaSalva"
-          class="px-8 p-4 mt-8 rounded-lg text-gray-50 font-bold uppercase bg-yellow-400 hover:bg-yellow-600 transition duration-200 border focus:border-gray-500 focus:outline-none"
+          class="px-8 p-4 mt-8 rounded-lg text-black font-bold uppercase bg-yellow-300 hover:bg-yellow-500 transition duration-200 border focus:border-gray-500 focus:outline-none"
+          aria-label="deletar todos itens"
         >
           Apagar toda lista
         </button>
       </div>
     </main>
     <footer
-      class="w-full mx-auto flex justify-center items-center text-black bg-gray-600 h-12 text-white"
+      class="w-full mx-auto flex justify-center items-center text-white bg-gray-600 h-12 text-white"
     >
       <p>
         Criado por
@@ -125,6 +130,8 @@
           <img
             src="./tailwindcss.svg"
             alt="TailWind Logo"
+            width="24"
+            height="24"
             class="h-6 w-6 inline align-top"
           />
           Tailwind CSS
