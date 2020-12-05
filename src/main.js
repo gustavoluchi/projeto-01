@@ -43,8 +43,7 @@ const geraUmLi = function (suaLista, conteudo, idDateNow) {
         itemGenerico.id = `li-${idDateNow}`;
         itemGenerico.classList.add("flex", "justify-between", "items-center", "h-12", "shadow-md", "bg-gray-50", "m-2", "border-2", "border-transparent", "hover:border-yellow-600", "rounded-lg");
         itemGenerico.innerHTML = `
-        <input id="cb-${idDateNow}" type="checkbox" class="m-2 h-6 w-6"/>
-        <label for="cb-${idDateNow}" class="hidden">confirmar a conclusão do conteúdo</label>
+        <input id="cb-${idDateNow}" type="checkbox" class="m-2 h-6 w-6" aria-label="concluir item"/>
         <span>${conteudo}</span>
         <button class="block w-10 h-10 btnApagar hover:gray-500 group" aria-label="deletar item" onclick="apagaLi(${idDateNow})" value='${arrayDeItems.length}'>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="fill-current">
