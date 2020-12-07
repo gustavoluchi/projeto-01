@@ -24,6 +24,9 @@ Você está participando de um processo seletivo para ingressar numa vaga de pro
 
 1. A aplicação deve ser desenvolvida utilizando HTML, CSS e JavaScript.
 
+# resolução:
+
+Utilizei o framework Tailwind CSS pra estilização. Utilizei também o Gulp [Gulp](https://github.com/gulpjs/gulp) para automatizar o fluxo de minificação, com o Gulp Babel Minify [gulp-babel-minify](https://github.com/jonschlinkert/gulp-htmlmin) pra transpilar e minificar os aruivos JS e Gulp HTML Minifier Terser [gulp-html-minifier-terser](https://github.com/pioug/gulp-html-minifier-terser) pra minificar os arquivos HTML.
 
 Desktop:  
 ![Desempenho-Lighthouse-Desktop](https://github.com/gustavoluchi/projeto-01/blob/main/Lighthouse%202020-12-04%20221425.png)  
