@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const minify = require("gulp-babel-minify");
 const htmlmin = require('gulp-html-minifier-terser');
-const ghPages = require('gulp-gh-pages');
+// const ghPages = require('gulp-gh-pages');
 
 
 gulp.task('miniJs', () => {
