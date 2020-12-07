@@ -1,7 +1,7 @@
 # projeto-01
 Projeto nº 1 do curso DEVinHouse, realizado pelo SENAI em parceria com a Softplan e a ACATE
 
-Instruções do projeto:
+Instruções do projeto:  
 Você está participando de um processo seletivo para ingressar numa vaga de programador em uma grande empresa de TI. Uma das etapas do processo envolve a criação de uma aplicação web de lista de afazeres (“to-do list”).
 
 1. Os requisitos que a aplicação deve ter, são:
